@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { Icon } from './Icons'
 
 const links = [
@@ -38,10 +39,17 @@ export default function Nav() {
         transition: 'all .4s cubic-bezier(.2,.7,.2,1)',
       }}>
         <a href="#top" style={{
-          fontFamily: "'Tenor Sans', serif", fontSize: 22, letterSpacing: '0.28em',
-          color: 'var(--fg)', textDecoration: 'none', display: 'flex', alignItems: 'baseline', gap: 10,
+          color: 'var(--fg)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 12,
         }}>
-          <span>LEALYA</span>
+          <Image
+            src="/assets/logos/logo-lealya-bronze.png"
+            alt="Lealya"
+            width={120}
+            height={22}
+            priority
+            className="h-5 w-auto"
+            style={{ height: 20, width: 'auto' }}
+          />
           <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: '0.3em', color: 'var(--muted)', textTransform: 'uppercase' }}>
             Asesora Inmobiliaria · Norte de Madrid
           </span>
@@ -79,7 +87,14 @@ export default function Nav() {
         display: 'flex', flexDirection: 'column', overflow: 'hidden',
       }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '28px 32px' }}>
-          <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 22, letterSpacing: '0.28em' }}>LEALYA</div>
+          <Image
+            src="/assets/logos/logo-lealya-bronze.png"
+            alt="Lealya"
+            width={120}
+            height={22}
+            className="h-5 w-auto"
+            style={{ height: 20, width: 'auto' }}
+          />
           <button onClick={() => setOpen(false)} aria-label="Cerrar" style={{
             background: 'transparent', border: 0, color: 'var(--fg)', cursor: 'pointer', padding: 8, display: 'flex', alignItems: 'center',
           }}><Icon.Close /></button>

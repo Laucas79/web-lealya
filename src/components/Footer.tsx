@@ -1,11 +1,19 @@
 'use client'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
     <footer style={{ background: 'var(--fg)', color: 'var(--bg)', padding: '96px 48px 32px' }}>
       <div className="wrap footer-grid" style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 48, paddingBottom: 80, borderBottom: '1px solid color-mix(in oklch, var(--bg) 15%, transparent)' }}>
         <div>
-          <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 36, letterSpacing: '0.28em', marginBottom: 24 }}>LEALYA</div>
+          <Image
+            src="/assets/logos/logo-lealya-cream.png"
+            alt="Lealya"
+            width={100}
+            height={18}
+            className="h-4 w-auto opacity-90"
+            style={{ height: 16, width: 'auto', opacity: 0.9, marginBottom: 24 }}
+          />
           <p style={{ fontSize: 16, lineHeight: 1.7, maxWidth: 360, opacity: .75, margin: '0 0 32px' }}>Asesora inmobiliaria de confianza en el norte de Madrid.<br/>Compra, venta e inversión con criterio técnico y discreción.</p>
           <p style={{ fontSize: 13, opacity: .55, lineHeight: 1.6, maxWidth: 340, margin: 0, fontStyle: 'italic', fontFamily: "'Fraunces', serif" }}>&ldquo;Menos fricción. Más claridad.&rdquo;</p>
         </div>

@@ -10,8 +10,7 @@ export default function Philosophy() {
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>01 · Filosofía</div>
           <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase', marginBottom: 32 }}>Por qué Lealya</div>
           <div style={{ width: '100%', aspectRatio: '1/1', position: 'relative' }} className="philosophy-img">
-            {/* TODO: Reemplazar con imagen del norte de Madrid alineada al nuevo posicionamiento */}
-            <Image src="/assets/filosofia-puente.png" alt="Criterio técnico — Filosofía Lealya" fill style={{ objectFit: 'cover' }}/>
+            <Image src="/assets/norte-madrid-aerea.png" alt="Vista aérea de urbanización residencial en el norte de Madrid con sierra al fondo" fill style={{ objectFit: 'cover' }}/>
           </div>
           <div style={{ marginTop: 14, fontFamily: "'DM Sans', sans-serif", fontSize: 10.5, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--muted)' }}>
             Criterio técnico · De principio a fin
