@@ -6,8 +6,7 @@ export default function About() {
       <div className="wrap about-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.2fr)', gap: 80, alignItems: 'center' }}>
         <div className="about-portrait" style={{ position: 'relative' }}>
           <div style={{ aspectRatio: '4/5', width: '100%', position: 'relative' }}>
-            {/* TODO: Reemplazar con foto real de Laura */}
-            <Image src="/assets/laura-portrait.png" alt="Laura Castellano — Fundadora de Lealya" fill style={{ objectFit: 'cover', objectPosition: 'center top' }}/>
+            <Image src="/assets/laura-portrait.png" alt="Laura Castellano, asesora inmobiliaria de confianza en el norte de Madrid" fill style={{ objectFit: 'cover', objectPosition: 'center top' }}/>
           </div>
           <div style={{ position: 'absolute', top: 24, left: 24, background: 'var(--bg)', padding: '8px 14px', fontSize: 10, letterSpacing: '0.25em', textTransform: 'uppercase', color: 'var(--accent)', fontWeight: 600 }}>
             Fundadora · +20 años en el sector
