@@ -5,6 +5,7 @@ import About from '@/components/About'
 import Services from '@/components/Services'
 import Process from '@/components/Process'
 import Numbers from '@/components/Numbers'
+import Zones from '@/components/Zones'
 import Testimonials from '@/components/Testimonials'
 import Faq from '@/components/Faq'
 import Contact from '@/components/Contact'
@@ -22,6 +23,7 @@ export default function Home() {
         <Services />
         <Process />
         <Numbers />
+        <Zones />
         <Testimonials />
         <Faq />
         <Contact />

@@ -43,7 +43,7 @@ export default function Nav() {
         }}>
           <span>LEALYA</span>
           <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 9, letterSpacing: '0.3em', color: 'var(--muted)', textTransform: 'uppercase' }}>
-            Personal Shopper Inmobiliario
+            Asesora Inmobiliaria · Norte de Madrid
           </span>
         </a>
         <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>

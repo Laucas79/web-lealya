@@ -3,7 +3,7 @@ export default function Numbers() {
     ['+500', 'Operaciones acompañadas', 'Compraventas e inversiones gestionadas en más de 20 años de trayectoria.'],
     ['97%', 'Clientes repiten o recomiendan', 'Nuestro principal canal sigue siendo el boca a boca.'],
     ['<15d', 'Tiempo medio hasta acuerdo', 'Desde la oferta inicial hasta el apretón de manos. Sin presión, sin atajos.'],
-    ['100%', 'Comprador y vendedor alineados', 'Mediamos para que ambas partes salgan con la sensación de haber acertado.'],
+    ['Norte de Madrid', 'Especialización en el corredor A-1', 'La Moraleja, Ciudalcampo, Ciudad Santo Domingo y más.'],
   ]
   return (
     <section className="section" style={{ background: 'var(--bg)', paddingTop: 100, paddingBottom: 100 }}>

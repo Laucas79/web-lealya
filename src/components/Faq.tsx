@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { Icon } from './Icons'
 
 const FAQ = [
-  ['¿En qué se diferencia un personal shopper inmobiliario de una agencia?', 'Una agencia tradicional representa al vendedor. En Lealya actúo como puente entre comprador y vendedor: defiendo los intereses de ambos y aporto criterio técnico en cada paso. El objetivo es que la operación sea justa y tranquila para las dos partes.'],
+  ['¿En qué se diferencia Lealya de una agencia inmobiliaria?', 'Una agencia tradicional tiene cartera propia — solo te muestra lo que tiene. Yo no tengo propiedades: busco en todo el mercado, incluido off-market, porque no tengo interés en que elijas una propiedad concreta. Y trabajo exclusivamente para quien me contrata — nunca para las dos partes en la misma operación.'],
   ['¿Cuáles son los honorarios?', 'Trabajamos con un fee fijo inicial más un porcentaje sobre el ahorro negociado (solo para compra) o sobre el precio final (venta e inversión). Los comunicamos siempre por escrito antes de empezar — cero sorpresas.'],
-  ['¿Trabajáis solo en Madrid?', 'Principalmente Madrid capital y alrededores. Para operaciones relevantes fuera de la Comunidad, lo valoramos caso por caso.'],
+  ['¿En qué zonas trabajas?', 'Principalmente en el corredor norte de Madrid: La Moraleja, Ciudalcampo, Ciudad Santo Domingo y Fuente del Fresno — el eje de la A-1 / Carretera de Burgos. Para operaciones fuera de esta zona, lo valoramos caso por caso.'],
   ['¿Cuánto dura un proceso de compra?', 'En promedio entre 2 y 5 meses desde el briefing hasta las llaves, dependiendo de la zona, el tipo de inmueble y tu disponibilidad para visitas. El objetivo no es ir rápido: es acertar.'],
   ['¿Aceptáis cualquier presupuesto?', 'Trabajamos con operaciones desde 300.000 €. Por debajo de ese rango el coste del servicio no suele ser proporcional. Para consultas puntuales no hay mínimo.'],
   ['¿Qué pasa si no encontramos la vivienda adecuada?', 'El primer objetivo siempre es la decisión correcta — incluso si es no comprar. En ese caso, el fee fijo cubre el trabajo realizado y cerramos de forma transparente.'],

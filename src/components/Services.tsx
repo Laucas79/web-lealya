@@ -6,7 +6,7 @@ const SERVICES = [
   {
     key: 'compra', num: '01', title: 'Compra', tag: 'Buyer side',
     lede: 'Búsqueda objetiva y acompañamiento al comprador con criterio técnico.',
-    body: 'Filtrado exhaustivo de mercado, visitas preselección, análisis técnico y negociación. Un puente equilibrado entre ambas partes para que la operación fluya sin sorpresas.',
+    body: 'Trabajo exclusivamente para ti como comprador. Filtrado exhaustivo de mercado, visitas preselección, análisis técnico y negociación para que la operación fluya sin sorpresas.',
     includes: ['Briefing detallado', 'Búsqueda off-market', 'Due diligence técnica', 'Negociación', 'Acompañamiento a notaría'],
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format',
     imageAlt: 'Interior cálido con luz natural', icon: 'Search' as const,
@@ -14,7 +14,7 @@ const SERVICES = [
   {
     key: 'venta', num: '02', title: 'Venta', tag: 'Seller side',
     lede: 'Estrategia, staging y presentación impecable para atraer al comprador correcto.',
-    body: 'Valoración realista, plan de marketing inmobiliario, fotografía profesional y filtrado riguroso de interesados. Precio adecuado, tiempos controlados.',
+    body: 'Trabajo exclusivamente para ti como vendedor. Valoración realista, plan de marketing inmobiliario, fotografía profesional y filtrado riguroso de interesados. Precio adecuado, tiempos controlados.',
     includes: ['Valoración técnica', 'Plan de staging', 'Fotografía y vídeo', 'Marketing dirigido', 'Gestión legal'],
     image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80&auto=format',
     imageAlt: 'Fachada residencial', icon: 'Home' as const,
@@ -22,7 +22,7 @@ const SERVICES = [
   {
     key: 'inversion', num: '03', title: 'Inversión', tag: 'Invest',
     lede: 'Análisis de rentabilidad, riesgo y viabilidad para decisiones patrimoniales.',
-    body: 'Estudio de rentabilidad por zona, proyección a 5/10 años, diagnóstico técnico y fiscal. Para inversores que priorizan criterio frente a impulso.',
+    body: 'Análisis independiente, sin cartera propia que colocar. Estudio de rentabilidad por zona, proyección a 5/10 años, diagnóstico técnico y fiscal. Para inversores que priorizan criterio frente a impulso.',
     includes: ['Análisis de rentabilidad', 'Estudio de zona', 'Proyección fiscal', 'Plan de obra', 'Gestión de alquiler'],
     image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80&auto=format',
     imageAlt: 'Interior minimalista', icon: 'Compass' as const,

@@ -3,11 +3,11 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lealya — Personal Shopper Inmobiliario Madrid',
+    default: 'Lealya — Tu Asesora Inmobiliaria de Confianza en el Norte de Madrid',
     template: '%s | Lealya',
   },
-  description: 'Laura Castellano, personal shopper inmobiliario en Madrid. Acompañamiento integral para comprar, vender e invertir en vivienda con calma y criterio técnico.',
-  keywords: ['personal shopper inmobiliario', 'madrid', 'comprar piso madrid', 'asesor inmobiliario', 'lealya'],
+  description: 'Laura Castellano, asesora inmobiliaria independiente especializada en La Moraleja, Ciudalcampo y el corredor norte de Madrid. Compra, venta e inversión con criterio técnico y sin conflictos de interés.',
+  keywords: ['asesora inmobiliaria norte madrid', 'personal shopper inmobiliario La Moraleja', 'comprar chalet Ciudalcampo', 'asesoría inmobiliaria corredor burgos', 'asesora inmobiliaria confianza madrid'],
   authors: [{ name: 'Laura Castellano', url: 'https://lealya.es' }],
   creator: 'Lealya',
   metadataBase: new URL('https://lealya.es'),
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     url: 'https://lealya.es',
     siteName: 'Lealya',
-    title: 'Lealya — Personal Shopper Inmobiliario Madrid',
-    description: 'Acompañamiento integral para comprar, vender e invertir en vivienda en Madrid.',
+    title: 'Lealya — Tu Asesora Inmobiliaria de Confianza en el Norte de Madrid',
+    description: 'Asesora inmobiliaria independiente especializada en La Moraleja, Ciudalcampo y el corredor norte de Madrid. Compra, venta e inversión con criterio técnico.',
   },
   robots: {
     index: true,

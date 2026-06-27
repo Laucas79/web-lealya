@@ -13,20 +13,21 @@ export default function Hero() {
         <div className="hero-copy">
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 32 }}>
             <span style={{ width: 40, height: 1, background: 'var(--accent)' }}/>
-            <span className="eyebrow" style={{ color: 'var(--accent)' }}>Personal Shopper Inmobiliario · Madrid</span>
+            <span className="eyebrow" style={{ color: 'var(--accent)' }}>Asesora Inmobiliaria de Confianza · Norte de Madrid</span>
           </div>
           <h1 className="headline" style={{
             fontSize: 'clamp(44px, 6.2vw, 92px)', lineHeight: 1.02,
             margin: '0 0 40px', letterSpacing: '-0.005em',
           }}>
-            Decisiones <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>importantes</span>,<br/>
-            tomadas con <span style={{ color: 'var(--accent)' }}>calma</span>.
+            En una operación inmobiliaria, lo más <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>importante</span><br/>
+            no es el precio.<br/>
+            <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>Es tener a la persona correcta de tu lado.</span>
           </h1>
           <p style={{
             fontSize: 19, lineHeight: 1.6, maxWidth: 520,
             color: 'var(--muted)', margin: '0 0 48px', fontWeight: 400,
           }}>
-            Acompañamiento integral para alquilar, comprar, vender o invertir en vivienda. Un puente equilibrado entre las dos partes — para que la decisión correcta sea también la decisión tranquila.
+            Más de 20 años acompañando operaciones de compra, venta e inversión en el norte de Madrid. Con criterio técnico, discreción absoluta y una persona real al otro lado.
           </p>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
             <a href="#contacto" className="bronze-button">Hablemos de tu caso</a>
@@ -39,7 +40,7 @@ export default function Hero() {
             {[
               ['+20 años', 'acompañando operaciones inmobiliarias'],
               ['+500', 'operaciones gestionadas end-to-end'],
-              ['2 partes', 'atendidas con el mismo criterio y respeto'],
+              ['Norte de Madrid', 'corredor A-1, La Moraleja, Ciudalcampo'],
             ].map(([big, small], i) => (
               <div key={i}>
                 <div className="headline" style={{ fontSize: 'clamp(28px, 3vw, 42px)', lineHeight: 1, marginBottom: 8 }}>{big}</div>
@@ -52,9 +53,10 @@ export default function Hero() {
           <div style={{
             aspectRatio: '4/5', width: '100%', position: 'relative', overflow: 'hidden',
           }}>
+            {/* TODO: Reemplazar con foto real de Laura o de las zonas cuando estén disponibles */}
             <Image
-              src="/assets/hero-calma.png"
-              alt="Lealya — Asesoría inmobiliaria con calma"
+              src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+              alt="Arquitectura residencial premium en el norte de Madrid"
               fill
               style={{ objectFit: 'cover', objectPosition: 'center' }}
               priority
@@ -68,7 +70,7 @@ export default function Hero() {
           }}>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 8 }}>Metodología</div>
             <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontSize: 16, lineHeight: 1.5, color: 'var(--fg)' }}>
-              &ldquo;No vendemos casas. Acompañamos decisiones.&rdquo;
+              &ldquo;Trabajo para quien me contrata. Con todo mi criterio y ningún conflicto de intereses.&rdquo;
             </div>
           </div>
         </div>

@@ -10,28 +10,29 @@ export default function Philosophy() {
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>01 · Filosofía</div>
           <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase', marginBottom: 32 }}>Por qué Lealya</div>
           <div style={{ width: '100%', aspectRatio: '1/1', position: 'relative' }} className="philosophy-img">
-            <Image src="/assets/filosofia-puente.png" alt="El puente — Filosofía Lealya" fill style={{ objectFit: 'cover' }}/>
+            {/* TODO: Reemplazar con imagen del norte de Madrid alineada al nuevo posicionamiento */}
+            <Image src="/assets/filosofia-puente.png" alt="Criterio técnico — Filosofía Lealya" fill style={{ objectFit: 'cover' }}/>
           </div>
           <div style={{ marginTop: 14, fontFamily: "'DM Sans', sans-serif", fontSize: 10.5, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--muted)' }}>
-            El puente · De una orilla a la otra
+            Criterio técnico · De principio a fin
           </div>
         </div>
         <div>
           <h2 className="headline" style={{ fontSize: 'clamp(32px, 4.6vw, 64px)', lineHeight: 1.08, margin: '0 0 40px', maxWidth: 1000 }}>
-            No somos una agencia <span style={{ color: 'var(--muted)' }}>inmobiliaria</span>. <br/>
-            Somos el <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>puente</span> entre quien compra y quien vende.
+            No soy una agencia <span style={{ color: 'var(--muted)' }}>inmobiliaria</span>. <br/>
+            Soy la persona que trabaja <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>exclusivamente</span> para ti.
           </h2>
           <div className="philosophy-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, marginTop: 48 }}>
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--fg)', margin: 0 }}>
-              Defiendo los intereses de <strong>ambas partes</strong>. Actúo como nexo entre comprador y vendedor: conecto, ordeno la información y traduzco expectativas. Una operación inmobiliaria solo funciona cuando las dos partes salen tranquilas.
+              Trabajo para quien me contrata — comprador o vendedor — con todo mi criterio técnico y sin ningún conflicto de intereses. Nunca represento a las dos partes en la misma operación. Eso es lo que me permite darte un consejo honesto, aunque no sea el que quieras escuchar.
             </p>
             <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--muted)', margin: 0 }}>
-              Aplicamos una visión técnica y arquitectónica a la gestión inmobiliaria para eliminar fricciones, detectar riesgos y proteger tu patrimonio. Claridad absoluta, rigor técnico, cero atajos.
+              Llevo más de 20 años gestionando operaciones inmobiliarias en el norte de Madrid. Conozco cada urbanización, cada dinámica de mercado, cada trampa legal. Eso es lo que pones de tu lado cuando me contratas.
             </p>
           </div>
           <div className="principles-grid" style={{ marginTop: 80, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid color-mix(in oklch, var(--fg) 20%, transparent)' }}>
             {[
-              ['Equilibrio', 'Un único profesional mediando entre comprador y vendedor con criterio justo.'],
+              ['Tu lado', 'Trabajo exclusivamente para quien me contrata. Una sola parte por operación, siempre.'],
               ['Criterio técnico', 'Diagnóstico arquitectónico, legal y financiero en cada operación.'],
               ['Transparencia', 'Honorarios claros desde el primer día. Cero letra pequeña.'],
               ['Calma', 'Gestionamos tiempos para que decidas sin presión comercial.'],
