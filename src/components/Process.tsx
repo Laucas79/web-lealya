@@ -1,9 +1,9 @@
 const PROCESS = [
-  ['Escucha', 'Una primera conversación sin compromiso. Entendemos qué buscas, por qué, y qué restricciones reales tienes.'],
-  ['Diagnóstico', 'Analizamos tu situación: patrimonio, fiscalidad, timing, criterios objetivos vs. emocionales. Traducimos el caos en requisitos.'],
-  ['Búsqueda', 'Recorremos mercado visible y off-market. Filtramos sin piedad. Solo te enseñamos lo que merece tu tiempo.'],
-  ['Decisión', 'Revisión técnica, legal y financiera de la opción final. Negociamos por ti. Tú decides desde la calma, no desde la urgencia.'],
-  ['Acompañamiento', 'Notaría, registro, gestión post-venta. Seguimos a tu lado hasta que tienes las llaves — y después.'],
+  ['Conversación', 'Nos conocemos, escucho tu situación y te explico cómo puedo ayudarte. Una primera conversación sin compromiso.'],
+  ['Diagnóstico', 'Analizamos tu situación: patrimonio, timing, criterios objetivos vs. emocionales. Traducimos el caos en requisitos.'],
+  ['Búsqueda', 'Recorremos mercado visible y off-market. Filtramos rigurosamente. Solo te enseñamos lo que merece tu tiempo.'],
+  ['Negociación', 'Te represento en la negociación para conseguir las mejores condiciones posibles, siempre buscando el acuerdo justo.'],
+  ['Cierre', 'Cierro todos los trámites contigo —notaría, registro, post-venta. Tú te encargas de disfrutar el resultado.'],
 ]
 
 export default function Process() {

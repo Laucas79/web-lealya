@@ -16,7 +16,7 @@ export default function Hero() {
             <span className="eyebrow" style={{ color: 'var(--accent)' }}>Asesora Inmobiliaria de Confianza · Norte de Madrid</span>
           </div>
           <h1 className="headline" style={{
-            fontSize: 'clamp(44px, 6.2vw, 92px)', lineHeight: 1.02,
+            fontSize: 'clamp(38px, 5vw, 72px)', lineHeight: 1.05,
             margin: '0 0 40px', letterSpacing: '-0.005em',
           }}>
             En una operación inmobiliaria, lo más <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>importante</span><br/>
@@ -70,7 +70,7 @@ export default function Hero() {
           }}>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 8 }}>Metodología</div>
             <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontSize: 16, lineHeight: 1.5, color: 'var(--fg)' }}>
-              &ldquo;Trabajo para quien me contrata. Con todo mi criterio y ningún conflicto de intereses.&rdquo;
+              &ldquo;Encontrar la propiedad perfecta es mucho más que una transacción: es un proceso de escucha, confianza y dedicación absoluta a tus necesidades.&rdquo;
             </div>
           </div>
         </div>

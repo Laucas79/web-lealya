@@ -49,4 +49,9 @@ export const Icon = {
       <circle cx="16" cy="16" r="12"/><path d="M12 20l3-8 8-3-3 8z" strokeLinejoin="round"/>
     </svg>
   ),
+  Building: ({ size = 28 }: { size?: number }) => (
+    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1">
+      <rect x="7" y="4" width="18" height="24"/><path d="M12 9h3M17 9h3M12 14h3M17 14h3M14 28v-5h4v5"/>
+    </svg>
+  ),
 }

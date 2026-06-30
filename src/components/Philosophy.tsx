@@ -22,10 +22,10 @@ export default function Philosophy() {
             Soy la persona que trabaja <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>exclusivamente</span> para ti.
           </h2>
           <div className="philosophy-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, marginTop: 48 }}>
-            <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--fg)', margin: 0 }}>
-              Trabajo para quien me contrata — comprador o vendedor — con todo mi criterio técnico y sin ningún conflicto de intereses. Nunca represento a las dos partes en la misma operación. Eso es lo que me permite darte un consejo honesto, aunque no sea el que quieras escuchar.
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: 'var(--fg)', margin: 0 }}>
+              Trabajo para quien me contrata — comprador o vendedor — con todo mi criterio técnico y sin ningún conflicto de intereses. Busco siempre el acuerdo justo: mi compromiso es con quien me contrata, así que, si hay margen de mejora en una negociación, ese margen es para ti. Eso es lo que me permite darte un consejo honesto, aunque no sea el que quieras escuchar.
             </p>
-            <p style={{ fontSize: 18, lineHeight: 1.7, color: 'var(--muted)', margin: 0 }}>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: 'var(--muted)', margin: 0 }}>
               Llevo más de 20 años gestionando operaciones inmobiliarias en el norte de Madrid. Conozco cada urbanización, cada dinámica de mercado, cada trampa legal. Eso es lo que pones de tu lado cuando me contratas.
             </p>
           </div>

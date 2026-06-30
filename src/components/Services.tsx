@@ -4,15 +4,7 @@ import { Icon } from './Icons'
 
 const SERVICES = [
   {
-    key: 'compra', num: '01', title: 'Compra', tag: 'Buyer side',
-    lede: 'Búsqueda objetiva y acompañamiento al comprador con criterio técnico.',
-    body: 'Trabajo exclusivamente para ti como comprador. Filtrado exhaustivo de mercado, visitas preselección, análisis técnico y negociación para que la operación fluya sin sorpresas.',
-    includes: ['Briefing detallado', 'Búsqueda off-market', 'Due diligence técnica', 'Negociación', 'Acompañamiento a notaría'],
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format',
-    imageAlt: 'Interior cálido con luz natural', icon: 'Search' as const,
-  },
-  {
-    key: 'venta', num: '02', title: 'Venta', tag: 'Seller side',
+    key: 'venta', num: '01', title: 'Venta', tag: 'Seller side',
     lede: 'Estrategia, staging y presentación impecable para atraer al comprador correcto.',
     body: 'Trabajo exclusivamente para ti como vendedor. Valoración realista, plan de marketing inmobiliario, fotografía profesional y filtrado riguroso de interesados. Precio adecuado, tiempos controlados.',
     includes: ['Valoración técnica', 'Plan de staging', 'Fotografía y vídeo', 'Marketing dirigido', 'Gestión legal'],
@@ -20,7 +12,23 @@ const SERVICES = [
     imageAlt: 'Fachada residencial', icon: 'Home' as const,
   },
   {
-    key: 'inversion', num: '03', title: 'Inversión', tag: 'Invest',
+    key: 'compra', num: '02', title: 'Compra', tag: 'Buyer side',
+    lede: 'Búsqueda objetiva y acompañamiento al comprador con criterio técnico.',
+    body: 'Trabajo exclusivamente para ti como comprador. Filtrado exhaustivo de mercado, visitas preselección, análisis técnico y negociación para que la operación fluya sin sorpresas.',
+    includes: ['Briefing detallado', 'Búsqueda off-market', 'Due diligence técnica', 'Negociación', 'Acompañamiento a notaría'],
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format',
+    imageAlt: 'Interior cálido con luz natural', icon: 'Search' as const,
+  },
+  {
+    key: 'alquiler', num: '03', title: 'Alquiler', tag: 'Rental',
+    lede: 'Alquilar con la tranquilidad de estar bien acompañado.',
+    body: 'Trabajo exclusivamente para ti, seas propietario o inquilino — nunca para ambas partes del mismo alquiler. Tanto si quieres alquilar tu propiedad como si buscas el alquiler adecuado, estoy siempre del lado de quien me contrata, con el mismo cuidado y la misma dedicación.',
+    includes: ['Fijación de condiciones y precio de mercado', 'Búsqueda o publicación según el caso', 'Verificación y selección de la contraparte', 'Revisión de condiciones contractuales', 'Acompañamiento hasta la firma'],
+    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&auto=format',
+    imageAlt: 'Salón luminoso de una vivienda en alquiler', icon: 'Building' as const,
+  },
+  {
+    key: 'inversion', num: '04', title: 'Inversión', tag: 'Invest',
     lede: 'Análisis de rentabilidad, riesgo y viabilidad para decisiones patrimoniales.',
     body: 'Análisis independiente, sin cartera propia que colocar. Estudio de rentabilidad por zona, proyección a 5/10 años, diagnóstico técnico y fiscal. Para inversores que priorizan criterio frente a impulso.',
     includes: ['Análisis de rentabilidad', 'Estudio de zona', 'Proyección fiscal', 'Plan de obra', 'Gestión de alquiler'],
@@ -28,7 +36,7 @@ const SERVICES = [
     imageAlt: 'Interior minimalista', icon: 'Compass' as const,
   },
   {
-    key: 'asesoria', num: '04', title: 'Asesoría puntual', tag: 'One-shot',
+    key: 'asesoria', num: '05', title: 'Asesoría puntual', tag: 'One-shot',
     lede: 'Una hora de claridad para un problema concreto.',
     body: 'Tasaciones, dudas legales, segundas opiniones sobre una oferta. Sesiones monográficas sin compromiso posterior.',
     includes: ['Revisión de oferta', 'Tasación de mercado', 'Diagnóstico estructural', 'Opinión técnica'],
@@ -49,9 +57,14 @@ export default function Services() {
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>03 · Servicios</div>
             <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase' }}>Metodología</div>
           </div>
-          <h2 className="headline" style={{ fontSize: 'clamp(32px, 4.4vw, 60px)', lineHeight: 1.08, margin: 0, maxWidth: 900 }}>
-            Cuatro formas de trabajar contigo. Una sola obsesión: <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>que aciertes</span>.
-          </h2>
+          <div>
+            <h2 className="headline" style={{ fontSize: 'clamp(32px, 4.4vw, 60px)', lineHeight: 1.08, margin: 0, maxWidth: 900 }}>
+              Cinco formas de trabajar contigo. Una sola obsesión: <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>que aciertes</span>.
+            </h2>
+            <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--muted)', margin: '24px 0 0', maxWidth: 620 }}>
+              No hay dos casos iguales: mi servicio se moldea a tu situación concreta, con la misma dedicación y transparencia en cada uno.
+            </p>
+          </div>
         </div>
         <div className="services-tabs" style={{ display: 'grid', gridTemplateColumns: `repeat(${SERVICES.length}, 1fr)`, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)', marginBottom: 48 }}>
           {SERVICES.map((sv, i) => (
@@ -87,6 +100,7 @@ export default function Services() {
             <div style={{ position: 'absolute', top: 20, right: 20, width: 56, height: 56, borderRadius: '50%', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)' }}>
               {s.icon === 'Search' && <Icon.Search size={24}/>}
               {s.icon === 'Home' && <Icon.Home size={24}/>}
+              {s.icon === 'Building' && <Icon.Building size={24}/>}
               {s.icon === 'Compass' && <Icon.Compass size={24}/>}
               {s.icon === 'Key' && <Icon.Key size={24}/>}
             </div>
