@@ -6,14 +6,14 @@ export default function Numbers() {
     ['Norte de Madrid', 'Especialización en el corredor A-1', 'La Moraleja, Ciudalcampo, Ciudad Santo Domingo y más.'],
   ]
   return (
-    <section className="section" style={{ background: 'var(--bg)', paddingTop: 100, paddingBottom: 100 }}>
+    <section className="section" style={{ background: 'var(--bg)', paddingTop: 64, paddingBottom: 80 }}>
       <div className="wrap">
         <div className="numbers-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
           {stats.map(([big, t, d], i) => (
-            <div key={i} style={{ padding: '48px 32px 48px 0', borderRight: i < 3 ? '1px solid var(--line)' : 'none', paddingLeft: i === 0 ? 0 : 32 }}>
-              <div className="headline" style={{ fontSize: 'clamp(44px, 5.4vw, 84px)', lineHeight: 1, margin: '0 0 20px', letterSpacing: '-0.02em', color: 'var(--fg)' }}>{big}</div>
+            <div key={i} style={{ padding: '36px 28px 36px 0', borderRight: i < 3 ? '1px solid var(--line)' : 'none', paddingLeft: i === 0 ? 0 : 28 }}>
+              <div className="headline" style={{ fontSize: 'clamp(30px, 3.4vw, 50px)', lineHeight: 1, margin: '0 0 14px', letterSpacing: '-0.02em', color: 'var(--fg)' }}>{big}</div>
               <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 10 }}>{t}</div>
-              <div style={{ fontSize: 13.5, lineHeight: 1.6, color: 'var(--muted)' }}>{d}</div>
+              <div style={{ fontSize: 12.5, lineHeight: 1.6, color: 'var(--muted)' }}>{d}</div>
             </div>
           ))}
         </div>

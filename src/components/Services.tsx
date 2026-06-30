@@ -52,42 +52,42 @@ export default function Services() {
   return (
     <section id="servicios" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)' }}>
       <div className="wrap">
-        <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 64 }}>
+        <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 40 }}>
           <div>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>03 · Servicios</div>
             <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase' }}>Metodología</div>
           </div>
           <div>
-            <h2 className="headline" style={{ fontSize: 'clamp(32px, 4.4vw, 60px)', lineHeight: 1.08, margin: 0, maxWidth: 900 }}>
+            <h2 className="headline" style={{ fontSize: 'clamp(26px, 3.4vw, 44px)', lineHeight: 1.1, margin: 0, maxWidth: 900 }}>
               Cinco formas de trabajar contigo. Una sola obsesión: <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>que aciertes</span>.
             </h2>
-            <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--muted)', margin: '24px 0 0', maxWidth: 620 }}>
+            <p style={{ fontSize: 15, lineHeight: 1.65, color: 'var(--muted)', margin: '20px 0 0', maxWidth: 620 }}>
               No hay dos casos iguales: mi servicio se moldea a tu situación concreta, con la misma dedicación y transparencia en cada uno.
             </p>
           </div>
         </div>
-        <div className="services-tabs" style={{ display: 'grid', gridTemplateColumns: `repeat(${SERVICES.length}, 1fr)`, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)', marginBottom: 48 }}>
+        <div className="services-tabs" style={{ display: 'grid', gridTemplateColumns: `repeat(${SERVICES.length}, 1fr)`, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)', marginBottom: 32 }}>
           {SERVICES.map((sv, i) => (
             <button key={sv.key} onClick={() => setActive(i)} style={{
               background: 'transparent', border: 0,
               borderRight: i < SERVICES.length - 1 ? '1px solid var(--line)' : 'none',
-              padding: '24px 20px', textAlign: 'left', cursor: 'pointer',
+              padding: '18px 16px', textAlign: 'left', cursor: 'pointer',
               color: active === i ? 'var(--fg)' : 'var(--muted)', fontFamily: 'inherit', transition: 'all .3s', position: 'relative',
             }}>
               <div style={{ fontSize: 10, letterSpacing: '0.2em', textTransform: 'uppercase', color: active === i ? 'var(--accent)' : 'var(--muted)', marginBottom: 8 }}>{sv.num} · {sv.tag}</div>
-              <div className="headline" style={{ fontSize: 22 }}>{sv.title}</div>
+              <div className="headline" style={{ fontSize: 18 }}>{sv.title}</div>
               {active === i && <span style={{ position: 'absolute', bottom: -1, left: 0, right: 0, height: 2, background: 'var(--accent)' }}/>}
             </button>
           ))}
         </div>
-        <div key={s.key} className="services-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: 64, animation: 'fadeIn .5s ease' }}>
+        <div key={s.key} className="services-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: 48, animation: 'fadeIn .5s ease' }}>
           <div>
-            <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontWeight: 300, fontSize: 'clamp(28px, 3.6vw, 48px)', lineHeight: 1.2, color: 'var(--fg)', margin: '0 0 28px', maxWidth: 620 }}>{s.lede}</div>
-            <p style={{ fontSize: 16, lineHeight: 1.75, color: 'var(--muted)', maxWidth: 540, margin: '0 0 40px' }}>{s.body}</p>
-            <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 16 }}>Incluye</div>
-            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>
+            <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontWeight: 300, fontSize: 'clamp(22px, 2.8vw, 34px)', lineHeight: 1.2, color: 'var(--fg)', margin: '0 0 20px', maxWidth: 620 }}>{s.lede}</div>
+            <p style={{ fontSize: 14.5, lineHeight: 1.7, color: 'var(--muted)', maxWidth: 540, margin: '0 0 28px' }}>{s.body}</p>
+            <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>Incluye</div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 28px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>
               {s.includes.map((it, i) => (
-                <li key={it} style={{ padding: '14px 0', borderTop: '1px solid var(--line)', borderBottom: i === s.includes.length - 1 ? '1px solid var(--line)' : 'none', fontSize: 15, display: 'flex', alignItems: 'center', gap: 14 }}>
+                <li key={it} style={{ padding: '11px 0', borderTop: '1px solid var(--line)', borderBottom: i === s.includes.length - 1 ? '1px solid var(--line)' : 'none', fontSize: 13.5, display: 'flex', alignItems: 'center', gap: 14 }}>
                   <span style={{ fontFamily: 'monospace', fontSize: 11, color: 'var(--accent)' }}>/{String(i + 1).padStart(2, '0')}</span>
                   {it}
                 </li>

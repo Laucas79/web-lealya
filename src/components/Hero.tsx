@@ -3,12 +3,12 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <section id="top" style={{
-      minHeight: '100vh', padding: '140px 48px 80px',
+      minHeight: '100vh', padding: '118px 48px 56px',
       background: 'var(--bg)', position: 'relative',
     }}>
       <div className="wrap" style={{
-        display: 'grid', gridTemplateColumns: 'minmax(0, 1.1fr) minmax(0, 1fr)',
-        gap: 80, alignItems: 'center', minHeight: 'calc(100vh - 220px)',
+        display: 'grid', gridTemplateColumns: 'minmax(0, 1.1fr) minmax(0, 440px)',
+        gap: 56, alignItems: 'center', minHeight: 'calc(100vh - 174px)',
       }}>
         <div className="hero-copy">
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 32 }}>
@@ -16,16 +16,15 @@ export default function Hero() {
             <span className="eyebrow" style={{ color: 'var(--accent)' }}>Asesora Inmobiliaria de Confianza · Norte de Madrid</span>
           </div>
           <h1 className="headline" style={{
-            fontSize: 'clamp(38px, 5vw, 72px)', lineHeight: 1.05,
-            margin: '0 0 40px', letterSpacing: '-0.005em',
+            fontSize: 'clamp(28px, 3.6vw, 50px)', lineHeight: 1.08,
+            margin: '0 0 28px', letterSpacing: '-0.005em',
           }}>
-            En una operación inmobiliaria, lo más <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>importante</span><br/>
-            no es el precio.<br/>
+            Lo más <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>importante</span> no es el precio.<br/>
             <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>Es tener a la persona correcta de tu lado.</span>
           </h1>
           <p style={{
-            fontSize: 19, lineHeight: 1.6, maxWidth: 520,
-            color: 'var(--muted)', margin: '0 0 48px', fontWeight: 400,
+            fontSize: 17, lineHeight: 1.6, maxWidth: 520,
+            color: 'var(--muted)', margin: '0 0 36px', fontWeight: 400,
           }}>
             Más de 20 años acompañando operaciones de compra, venta e inversión en el norte de Madrid. Con criterio técnico, discreción absoluta y una persona real al otro lado.
           </p>
@@ -34,8 +33,8 @@ export default function Hero() {
             <a href="#servicios" className="ghost-button">Ver servicios</a>
           </div>
           <div style={{
-            marginTop: 72, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 28, paddingTop: 36, borderTop: '1px solid var(--line)',
+            marginTop: 44, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: 24, paddingTop: 28, borderTop: '1px solid var(--line)',
           }}>
             {[
               ['+20 años', 'acompañando operaciones inmobiliarias'],
@@ -43,15 +42,16 @@ export default function Hero() {
               ['Norte de Madrid', 'corredor A-1, La Moraleja, Ciudalcampo'],
             ].map(([big, small], i) => (
               <div key={i}>
-                <div className="headline" style={{ fontSize: 'clamp(28px, 3vw, 42px)', lineHeight: 1, marginBottom: 8 }}>{big}</div>
-                <div style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.5, letterSpacing: '0.04em' }}>{small}</div>
+                <div className="headline" style={{ fontSize: 'clamp(20px, 2.2vw, 30px)', lineHeight: 1, marginBottom: 8 }}>{big}</div>
+                <div style={{ fontSize: 11.5, color: 'var(--muted)', lineHeight: 1.5, letterSpacing: '0.04em' }}>{small}</div>
               </div>
             ))}
           </div>
         </div>
         <div className="hero-image" style={{ position: 'relative' }}>
           <div style={{
-            aspectRatio: '4/5', width: '100%', position: 'relative', overflow: 'hidden',
+            aspectRatio: '4/5', width: '100%',
+            position: 'relative', overflow: 'hidden',
           }}>
             {/* TODO: Reemplazar con foto real de Laura o de las zonas cuando estén disponibles */}
             <Image

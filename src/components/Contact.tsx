@@ -48,10 +48,10 @@ export default function Contact() {
       <div className="wrap contact-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.1fr)', gap: 96, alignItems: 'start' }}>
         <div>
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 20 }}>06 · Contacto</div>
-          <h2 className="headline" style={{ fontSize: 'clamp(40px, 5.2vw, 76px)', lineHeight: 1.02, margin: '0 0 32px' }}>
+          <h2 className="headline" style={{ fontSize: 'clamp(30px, 4vw, 54px)', lineHeight: 1.06, margin: '0 0 28px' }}>
             ¿Empezamos por una <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>conversación</span>?
           </h2>
-          <p style={{ fontSize: 18, lineHeight: 1.65, color: 'var(--muted)', maxWidth: 460, margin: '0 0 48px' }}>
+          <p style={{ fontSize: 16, lineHeight: 1.65, color: 'var(--muted)', maxWidth: 460, margin: '0 0 40px' }}>
             30 minutos sin compromiso. Te escucho, analizo tu caso y te digo con honestidad si puedo ayudarte — o a quién derivarte si no.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
