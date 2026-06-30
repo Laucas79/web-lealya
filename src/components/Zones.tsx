@@ -70,7 +70,7 @@ export default function Zones() {
         </div>
 
         <p style={{ fontSize: 13, lineHeight: 1.6, color: 'var(--muted)', marginTop: 40, textAlign: 'center', fontStyle: 'italic', fontFamily: "'Fraunces', serif" }}>
-          ¿Tu zona no aparece aquí? Si la operación tiene sentido, lo valoramos.
+          También trabajo con frecuencia en Valdebebas y Barajas, zonas colindantes al corredor A-1. ¿Tu zona no aparece aquí? Si la operación tiene sentido, lo valoramos.
         </p>
       </div>
       <style>{`
