@@ -18,16 +18,10 @@ export default function About() {
             Hola, soy <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>Laura</span>.
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--fg)', margin: '0 0 24px', maxWidth: 580 }}>
-            Llevo toda mi vida profesional <strong>entre personas y decisiones importantes</strong>. Empecé en el mundo corporativo como secretaria de alta dirección, aprendiendo a ordenar el caos, anticipar y tratar cada asunto con la discreción que merece.
-          </p>
-          <p style={{ fontSize: 15, lineHeight: 1.75, color: 'var(--muted)', margin: '0 0 24px', maxWidth: 580 }}>
-            Hace más de <strong>20 años</strong> di el salto a la asesoría inmobiliaria y descubrí mi vocación: gestionar operaciones de principio a fin —búsqueda, negociación, notaría, post-venta— cuidando cada detalle como si la casa fuese mía.
-          </p>
-          <p style={{ fontSize: 15, lineHeight: 1.75, color: 'var(--muted)', margin: '0 0 24px', maxWidth: 580 }}>
-            Fundé Lealya para dar nombre a esa manera de trabajar: una asesora que trabaja <em>exclusivamente</em> para quien la contrata, con criterio técnico, calma y sin ningún conflicto de intereses.
+            Llevo toda mi vida profesional <strong>entre personas y decisiones importantes</strong>. Empecé como secretaria de alta dirección y hace más de 20 años di el salto a la asesoría inmobiliaria — gestionando operaciones de principio a fin, con la discreción y el criterio que aprendí en el mundo corporativo.
           </p>
           <p style={{ fontSize: 15, lineHeight: 1.75, color: 'var(--muted)', margin: '0 0 40px', maxWidth: 580 }}>
-            Hoy trabajo principalmente en el corredor norte de Madrid — La Moraleja, Ciudalcampo, Ciudad Santo Domingo, Fuente del Fresno — donde llevo años construyendo relaciones de confianza con compradores, vendedores e inversores que valoran la discreción y el criterio por encima de cualquier otra cosa.
+            Fundé Lealya para dar nombre a esa manera de trabajar: una asesora que trabaja <em>exclusivamente</em> para quien la contrata, sin conflicto de intereses. Hoy opero principalmente en el corredor norte de Madrid — La Moraleja, Ciudalcampo, Ciudad Santo Domingo, Fuente del Fresno — donde llevo años construyendo relaciones de confianza con compradores, vendedores e inversores que valoran la discreción por encima de cualquier otra cosa.
           </p>
           <div style={{ display: 'flex', gap: 48, flexWrap: 'wrap', marginBottom: 40 }}>
             <div>
