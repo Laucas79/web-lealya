@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <section id="top" style={{
-      minHeight: '100vh', padding: '118px 48px 56px',
+      minHeight: 'calc(100vh - 69px)', padding: '118px 48px 56px',
       background: 'var(--bg)', position: 'relative',
     }}>
       <div className="wrap" style={{
