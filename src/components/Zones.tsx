@@ -38,9 +38,9 @@ const ZONES = [
 
 export default function Zones() {
   return (
-    <section id="zonas" className="section" style={{ background: 'var(--stone)' }}>
+    <section id="zonas" className="section" style={{ background: 'var(--stone)', paddingTop: 90, paddingBottom: 90 }}>
       <div className="wrap">
-        <div className="zones-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 44, alignItems: 'start' }}>
+        <div className="zones-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 35, alignItems: 'start' }}>
           <div>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>Zona de actuación</div>
             <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase' }}>Corredor A-1</div>

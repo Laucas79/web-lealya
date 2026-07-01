@@ -50,9 +50,9 @@ export default function Services() {
   const s = SERVICES[active]
 
   return (
-    <section id="servicios" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)' }}>
+    <section id="servicios" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)', paddingTop: 90 }}>
       <div className="wrap">
-        <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 40 }}>
+        <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 28 }}>
           <div>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>03 · Servicios</div>
             <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase' }}>Metodología</div>

@@ -44,11 +44,11 @@ export default function Contact() {
   )
 
   return (
-    <section id="contacto" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)' }}>
+    <section id="contacto" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)', paddingTop: 102 }}>
       <div className="wrap contact-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.1fr)', gap: 96, alignItems: 'start' }}>
         <div>
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 20 }}>06 · Contacto</div>
-          <h2 className="headline" style={{ fontSize: 'clamp(30px, 4vw, 54px)', lineHeight: 1.06, margin: '0 0 28px' }}>
+          <h2 className="headline" style={{ fontSize: 'clamp(28px, 3.5vw, 46px)', lineHeight: 1.06, margin: '0 0 28px' }}>
             ¿Empezamos por una <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>conversación</span>?
           </h2>
           <p style={{ fontSize: 16, lineHeight: 1.65, color: 'var(--muted)', maxWidth: 460, margin: '0 0 40px' }}>

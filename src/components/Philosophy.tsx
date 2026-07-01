@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Philosophy() {
   return (
-    <section id="filosofia" className="section" style={{ background: 'var(--panel)' }}>
+    <section id="filosofia" className="section" style={{ background: 'var(--panel)', paddingTop: 84, paddingBottom: 84 }}>
       <div className="wrap philosophy-wrap" style={{
         display: 'grid', gridTemplateColumns: '280px minmax(0, 1fr)', gap: 80, alignItems: 'start',
       }}>
@@ -17,11 +17,11 @@ export default function Philosophy() {
           </div>
         </div>
         <div>
-          <h2 className="headline" style={{ fontSize: 'clamp(28px, 3.9vw, 54px)', lineHeight: 1.1, margin: '0 0 32px', maxWidth: 1000 }}>
+          <h2 className="headline" style={{ fontSize: 'clamp(26px, 3.4vw, 46px)', lineHeight: 1.1, margin: '0 0 28px', maxWidth: 1000 }}>
             No soy una agencia <span style={{ color: 'var(--muted)' }}>inmobiliaria</span>. <br/>
             Soy la persona que trabaja <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>exclusivamente</span> para ti.
           </h2>
-          <div className="philosophy-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, marginTop: 48 }}>
+          <div className="philosophy-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, marginTop: 24 }}>
             <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--fg)', margin: 0 }}>
               Trabajo para quien me contrata — comprador o vendedor — con todo mi criterio técnico y sin ningún conflicto de intereses. Busco siempre el acuerdo justo: mi compromiso es con quien me contrata, así que, si hay margen de mejora en una negociación, ese margen es para ti. Eso es lo que me permite darte un consejo honesto, aunque no sea el que quieras escuchar.
             </p>
@@ -29,7 +29,7 @@ export default function Philosophy() {
               Llevo más de 20 años gestionando operaciones inmobiliarias en el norte de Madrid. Conozco cada urbanización, cada dinámica de mercado, cada trampa legal. Eso es lo que pones de tu lado cuando me contratas.
             </p>
           </div>
-          <div className="principles-grid" style={{ marginTop: 80, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid color-mix(in oklch, var(--fg) 20%, transparent)' }}>
+          <div className="principles-grid" style={{ marginTop: 44, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid color-mix(in oklch, var(--fg) 20%, transparent)' }}>
             {[
               ['Tu lado', 'Trabajo exclusivamente para quien me contrata. Una sola parte por operación, siempre.'],
               ['Criterio técnico', 'Diagnóstico arquitectónico, legal y financiero en cada operación.'],
