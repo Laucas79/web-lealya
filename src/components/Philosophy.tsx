@@ -17,7 +17,7 @@ export default function Philosophy() {
           </div>
         </div>
         <div>
-          <h2 className="headline" style={{ fontSize: 'clamp(26px, 3.4vw, 46px)', lineHeight: 1.1, margin: '0 0 16px', maxWidth: 1000 }}>
+          <h2 className="headline" style={{ fontSize: 'clamp(22px, 2.8vw, 38px)', lineHeight: 1.1, margin: '0 0 16px', maxWidth: 1000 }}>
             No soy una agencia <span style={{ color: 'var(--muted)' }}>inmobiliaria</span>. <br/>
             Soy la persona que trabaja <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>exclusivamente</span> para ti.
           </h2>

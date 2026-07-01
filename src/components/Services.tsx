@@ -82,7 +82,7 @@ export default function Services() {
         </div>
         <div key={s.key} className="services-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: 48, animation: 'fadeIn .5s ease' }}>
           <div>
-            <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontWeight: 300, fontSize: 'clamp(19px, 2.4vw, 29px)', lineHeight: 1.2, color: 'var(--fg)', margin: '0 0 20px', maxWidth: 620 }}>{s.lede}</div>
+            <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontWeight: 300, fontSize: 'clamp(16px, 2vw, 24px)', lineHeight: 1.2, color: 'var(--fg)', margin: '0 0 20px', maxWidth: 620 }}>{s.lede}</div>
             <p style={{ fontSize: 14.5, lineHeight: 1.7, color: 'var(--muted)', maxWidth: 540, margin: '0 0 28px' }}>{s.body}</p>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>Incluye</div>
             <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 28px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 0 }}>

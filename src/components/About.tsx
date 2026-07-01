@@ -14,7 +14,7 @@ export default function About() {
         </div>
         <div>
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 20 }}>02 · Sobre mí</div>
-          <h2 className="headline" style={{ fontSize: 'clamp(30px, 4vw, 56px)', lineHeight: 1.08, margin: '0 0 28px' }}>
+          <h2 className="headline" style={{ fontSize: 'clamp(24px, 3vw, 40px)', lineHeight: 1.08, margin: '0 0 28px' }}>
             Hola, soy <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>Laura</span>.
           </h2>
           <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--fg)', margin: '0 0 24px', maxWidth: 580 }}>
