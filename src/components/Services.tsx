@@ -50,7 +50,7 @@ export default function Services() {
   const s = SERVICES[active]
 
   return (
-    <section id="servicios" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)', paddingTop: 48, paddingBottom: 64 }}>
+    <section id="servicios" className="section" style={{ background: 'var(--bg)', minHeight: 'calc(100vh - 69px)', borderTop: '1px solid var(--line)', paddingTop: 48, paddingBottom: 64 }}>
       <div className="wrap">
         <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 16 }}>
           <div>

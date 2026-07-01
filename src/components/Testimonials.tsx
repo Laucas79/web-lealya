@@ -11,7 +11,7 @@ export default function Testimonials() {
   const [i, setI] = useState(0)
   const t = TESTIMONIALS[i]
   return (
-    <section id="testimonios" className="section" style={{ background: 'var(--panel-deep)', color: 'var(--bg)', position: 'relative', overflow: 'hidden' }}>
+    <section id="testimonios" className="section" style={{ background: 'var(--panel-deep)', minHeight: 'calc(100vh - 69px)', color: 'var(--bg)', position: 'relative', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=1600&q=80&auto=format)', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.15, mixBlendMode: 'luminosity', pointerEvents: 'none' }}/>
       <div className="wrap-narrow" style={{ textAlign: 'center', position: 'relative' }}>
         <div className="eyebrow" style={{ color: 'var(--bg)', opacity: .6, marginBottom: 32 }}>05 · Testimonios</div>

@@ -30,7 +30,7 @@ function FaqItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean
 export default function Faq() {
   const [open, setOpen] = useState<number>(0)
   return (
-    <section id="faq" className="section" style={{ background: 'var(--bg)' }}>
+    <section id="faq" className="section" style={{ background: 'var(--bg)', minHeight: 'calc(100vh - 69px)' }}>
       <div className="wrap faq-wrap" style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: 80 }}>
         <div>
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 16 }}>Preguntas frecuentes</div>

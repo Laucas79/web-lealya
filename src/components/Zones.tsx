@@ -38,7 +38,7 @@ const ZONES = [
 
 export default function Zones() {
   return (
-    <section id="zonas" className="section" style={{ background: 'var(--stone)', paddingTop: 48, paddingBottom: 48 }}>
+    <section id="zonas" className="section" style={{ background: 'var(--stone)', minHeight: 'calc(100vh - 69px)', paddingTop: 48, paddingBottom: 48 }}>
       <div className="wrap">
         <div className="zones-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 24, alignItems: 'start' }}>
           <div>
