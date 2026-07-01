@@ -93,10 +93,10 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-            <a href="#contacto" className="link-arrow">Empezar con {s.title} <Icon.Arrow /></a>
           </div>
           <div style={{ position: 'relative' }}>
-            <div style={{ aspectRatio: '4/5', width: '100%', backgroundImage: `url(${s.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+            {/* TODO: Reemplazar con imagen real cuando esté disponible */}
+            <div style={{ aspectRatio: '16/9', width: '100%', backgroundImage: `url(https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80)`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
             <div style={{ position: 'absolute', top: 20, right: 20, width: 56, height: 56, borderRadius: '50%', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent)' }}>
               {s.icon === 'Search' && <Icon.Search size={24}/>}
               {s.icon === 'Home' && <Icon.Home size={24}/>}
