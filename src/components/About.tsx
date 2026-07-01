@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <section id="laura" className="section" style={{ background: 'var(--bg)', paddingTop: 48, paddingBottom: 48 }}>
+    <section id="laura" className="section" style={{ background: 'var(--bg)', paddingTop: 48, paddingBottom: 72 }}>
       <div className="wrap about-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.2fr)', gap: 80, alignItems: 'center' }}>
         <div className="about-portrait" style={{ position: 'relative' }}>
           <div style={{ aspectRatio: '4/5', width: '100%', position: 'relative' }}>

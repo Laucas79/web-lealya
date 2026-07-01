@@ -8,7 +8,7 @@ const PROCESS = [
 
 export default function Process() {
   return (
-    <section id="proceso" className="section" style={{ background: 'var(--panel)', paddingTop: 40, paddingBottom: 32 }}>
+    <section id="proceso" className="section" style={{ background: 'var(--panel)', paddingTop: 40, paddingBottom: 16 }}>
       <div className="wrap">
         <div className="process-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 64 }}>
           <div><div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>04 · Proceso</div></div>

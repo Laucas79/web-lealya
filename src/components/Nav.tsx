@@ -8,8 +8,10 @@ const links = [
   { href: '#laura', label: 'Laura Castellano', num: '02' },
   { href: '#servicios', label: 'Servicios', num: '03' },
   { href: '#proceso', label: 'Proceso', num: '04' },
-  { href: '#testimonios', label: 'Testimonios', num: '05' },
-  { href: '#contacto', label: 'Contacto', num: '06' },
+  { href: '#zonas', label: 'Zonas', num: '05' },
+  { href: '#testimonios', label: 'Testimonios', num: '06' },
+  { href: '#faq', label: 'FAQ', num: '07' },
+  { href: '#contacto', label: 'Contacto', num: '08' },
 ]
 
 export default function Nav() {
