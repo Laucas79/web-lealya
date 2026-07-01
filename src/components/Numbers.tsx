@@ -6,7 +6,7 @@ export default function Numbers() {
     ['Norte de Madrid', 'Especialización en el corredor A-1', 'La Moraleja, Ciudalcampo, Ciudad Santo Domingo y más.'],
   ]
   return (
-    <section className="section" style={{ background: 'var(--bg)', paddingTop: 42, paddingBottom: 64 }}>
+    <section className="section" style={{ background: 'var(--bg)', paddingTop: 32, paddingBottom: 48 }}>
       <div className="wrap">
         <div className="numbers-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
           {stats.map(([big, t, d], i) => (

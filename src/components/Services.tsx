@@ -50,9 +50,9 @@ export default function Services() {
   const s = SERVICES[active]
 
   return (
-    <section id="servicios" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)', paddingTop: 90 }}>
+    <section id="servicios" className="section" style={{ background: 'var(--bg)', borderTop: '1px solid var(--line)', paddingTop: 48, paddingBottom: 48 }}>
       <div className="wrap">
-        <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 28 }}>
+        <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 16 }}>
           <div>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>03 · Servicios</div>
             <div style={{ fontFamily: "'Tenor Sans', serif", fontSize: 13, letterSpacing: '0.18em', color: 'var(--muted)', textTransform: 'uppercase' }}>Metodología</div>
@@ -61,7 +61,7 @@ export default function Services() {
             <h2 className="headline" style={{ fontSize: 'clamp(26px, 3.4vw, 44px)', lineHeight: 1.1, margin: 0, maxWidth: 900 }}>
               Cinco formas de trabajar contigo. Una sola obsesión: <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>que aciertes</span>.
             </h2>
-            <p style={{ fontSize: 15, lineHeight: 1.65, color: 'var(--muted)', margin: '20px 0 0', maxWidth: 620 }}>
+            <p style={{ fontSize: 15, lineHeight: 1.65, color: 'var(--muted)', margin: '16px 0 0', maxWidth: 620 }}>
               No hay dos casos iguales: mi servicio se moldea a tu situación concreta, con la misma dedicación y transparencia en cada uno.
             </p>
           </div>
