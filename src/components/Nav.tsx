@@ -37,7 +37,7 @@ export default function Nav() {
         padding: scrolled ? '16px 32px' : '28px 32px',
         background: scrolled ? 'color-mix(in oklch, var(--bg) 85%, transparent)' : 'transparent',
         backdropFilter: scrolled ? 'blur(16px) saturate(1.2)' : 'none',
-        borderBottom: scrolled ? '1px solid color-mix(in oklch, var(--line) 50%, transparent)' : '1px solid transparent',
+        borderBottom: scrolled ? 'none' : '1px solid transparent',
         transition: 'all .4s cubic-bezier(.2,.7,.2,1)',
       }}>
         <a href="#top" style={{
