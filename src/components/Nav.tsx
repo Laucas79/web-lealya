@@ -107,12 +107,12 @@ export default function Nav() {
               <a key={l.href} href={l.href} onClick={() => setOpen(false)}
                 style={{
                   display: 'flex', alignItems: 'baseline', gap: 20,
-                  padding: '18px 0',
+                  padding: '14px 0',
                   borderTop: i === 0 ? '1px solid var(--line)' : 'none',
                   borderBottom: '1px solid var(--line)',
                   textDecoration: 'none', color: 'var(--fg)',
                   fontFamily: "'Tenor Sans', serif",
-                  fontSize: 'clamp(28px, 4vw, 44px)',
+                  fontSize: 'clamp(22px, 3.2vw, 35px)',
                   transition: 'color .25s, padding-left .25s',
                 }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--accent)'; (e.currentTarget as HTMLElement).style.paddingLeft = '16px'; }}
