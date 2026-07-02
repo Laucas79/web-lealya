@@ -1,3 +1,6 @@
+import CountUp from './CountUp'
+import FadeIn from './FadeIn'
+
 export default function Numbers() {
   const stats = [
     ['+500', 'Operaciones acompañadas', 'Compraventas e inversiones gestionadas en más de 20 años de trayectoria.'],
@@ -11,7 +14,11 @@ export default function Numbers() {
         <div className="numbers-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
           {stats.map(([big, t, d], i) => (
             <div key={i} style={{ padding: '36px 28px 36px 0', borderRight: i < 3 ? '1px solid var(--line)' : 'none', paddingLeft: i === 0 ? 0 : 28 }}>
-              <div className="headline" style={{ fontSize: 'clamp(30px, 3.4vw, 50px)', lineHeight: 1, margin: '0 0 14px', letterSpacing: '-0.02em', color: 'var(--fg)' }}>{big}</div>
+              <div className="headline" style={{ fontSize: 'clamp(30px, 3.4vw, 50px)', lineHeight: 1, margin: '0 0 14px', letterSpacing: '-0.02em', color: 'var(--fg)' }}>
+                {big === '+500' ? <CountUp target={500} prefix="+" />
+                  : big === '97%' ? <CountUp target={97} suffix="%" />
+                  : <FadeIn>{big}</FadeIn>}
+              </div>
               <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 10 }}>{t}</div>
               <div style={{ fontSize: 12.5, lineHeight: 1.6, color: 'var(--muted)' }}>{d}</div>
             </div>

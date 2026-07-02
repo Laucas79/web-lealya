@@ -1,3 +1,6 @@
+'use client'
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
 import FadeIn from './FadeIn'
 
 const PROCESS = [
@@ -9,6 +12,8 @@ const PROCESS = [
 ]
 
 export default function Process() {
+  const lineRef = useRef(null)
+  const lineInView = useInView(lineRef, { once: true, margin: '-80px' })
   return (
     <section id="proceso" className="section" style={{ background: 'var(--panel)', paddingTop: 80, paddingBottom: 16 }}>
       <div className="wrap">
@@ -20,7 +25,14 @@ export default function Process() {
           </h2>
         </div>
         <div style={{ position: 'relative' }}>
-          <div className="process-line" style={{ position: 'absolute', left: 0, right: 0, top: 56, height: 1, background: 'color-mix(in oklch, var(--fg) 18%, transparent)' }}/>
+          <div ref={lineRef} className="process-line" style={{ position: 'absolute', left: 0, right: 0, top: 56, height: 1, overflow: 'hidden' }}>
+            <motion.div
+              style={{ height: '1px', width: '100%', background: 'color-mix(in oklch, var(--fg) 18%, transparent)', originX: 0 }}
+              initial={{ scaleX: 0 }}
+              animate={lineInView ? { scaleX: 1 } : { scaleX: 0 }}
+              transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+          </div>
           <div className="process-grid" style={{ display: 'grid', gridTemplateColumns: `repeat(${PROCESS.length}, 1fr)`, gap: 0, position: 'relative' }}>
             {PROCESS.map(([t, d], i) => (
               <div key={t as string} style={{ padding: '0 18px 0 0', position: 'relative' }}>
