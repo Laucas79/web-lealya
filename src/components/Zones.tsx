@@ -1,5 +1,6 @@
 // Server component — no 'use client'
 // Sección: zonas de actuación
+import FadeIn from './FadeIn'
 
 const ZONES = [
   {
@@ -40,6 +41,7 @@ export default function Zones() {
   return (
     <section id="zonas" className="section" style={{ background: 'var(--stone)', minHeight: 'calc(100vh - 69px)', paddingTop: 48, paddingBottom: 48 }}>
       <div className="wrap">
+        <FadeIn>
         <div className="zones-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 24, alignItems: 'start' }}>
           <div>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>Zona de actuación</div>
@@ -68,6 +70,7 @@ export default function Zones() {
             </article>
           ))}
         </div>
+        </FadeIn>
 
         <p style={{ fontSize: 13, lineHeight: 1.6, color: 'var(--muted)', marginTop: 40, textAlign: 'center', fontStyle: 'italic', fontFamily: "'Fraunces', serif" }}>
           También trabajo con frecuencia en Valdebebas y Barajas, zonas colindantes al corredor A-1. ¿Tu zona no aparece aquí? Si la operación tiene sentido, lo valoramos.

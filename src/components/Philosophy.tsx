@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import FadeIn from './FadeIn'
 
 export default function Philosophy() {
   return (
@@ -16,7 +17,7 @@ export default function Philosophy() {
             Criterio técnico · De principio a fin
           </div>
         </div>
-        <div>
+        <FadeIn>
           <h2 className="headline" style={{ fontSize: 'clamp(22px, 2.8vw, 38px)', lineHeight: 1.1, margin: '0 0 16px', maxWidth: 1000 }}>
             No soy una agencia <span style={{ color: 'var(--muted)' }}>inmobiliaria</span>. <br/>
             Soy la persona que trabaja <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>exclusivamente</span> para ti.
@@ -43,7 +44,7 @@ export default function Philosophy() {
               </div>
             ))}
           </div>
-        </div>
+        </FadeIn>
       </div>
       <style>{`
         @media (max-width: 900px) {

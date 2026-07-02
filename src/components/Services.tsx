@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Icon } from './Icons'
+import FadeIn from './FadeIn'
 
 const SERVICES = [
   {
@@ -52,6 +54,7 @@ export default function Services() {
   return (
     <section id="servicios" className="section" style={{ background: 'var(--bg)', minHeight: 'calc(100vh - 69px)', borderTop: '1px solid var(--line)', paddingTop: 48, paddingBottom: 64 }}>
       <div className="wrap">
+        <FadeIn>
         <div className="services-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 16 }}>
           <div>
             <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>03 · Servicios</div>
@@ -80,7 +83,10 @@ export default function Services() {
             </button>
           ))}
         </div>
-        <div key={s.key} className="services-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: 48, animation: 'fadeIn .5s ease' }}>
+        </FadeIn>
+        <AnimatePresence mode="wait">
+        <motion.div key={s.key} className="services-detail" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr)', gap: 48 }}
+          initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.2, ease: 'easeOut' }}>
           <div>
             <div style={{ fontFamily: "'Fraunces', serif", fontStyle: 'italic', fontWeight: 300, fontSize: 'clamp(16px, 2vw, 24px)', lineHeight: 1.2, color: 'var(--fg)', margin: '0 0 20px', maxWidth: 620 }}>{s.lede}</div>
             <p style={{ fontSize: 14.5, lineHeight: 1.7, color: 'var(--muted)', maxWidth: 540, margin: '0 0 28px' }}>{s.body}</p>
@@ -105,7 +111,8 @@ export default function Services() {
               {s.icon === 'Key' && <Icon.Key size={24}/>}
             </div>
           </div>
-        </div>
+        </motion.div>
+        </AnimatePresence>
       </div>
       <style>{`
         @media (max-width: 900px) {

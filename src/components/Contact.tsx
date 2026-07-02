@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import FadeIn from './FadeIn'
 
 type FormState = { name: string; email: string; phone: string; tipo: string; presupuesto: string; msg: string }
 
@@ -47,6 +48,7 @@ export default function Contact() {
     <section id="contacto" className="section" style={{ background: 'var(--bg)', minHeight: 'calc(100vh - 69px)', borderTop: '1px solid var(--line)', paddingTop: 48, paddingBottom: 80 }}>
       <div className="wrap contact-wrap" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.1fr)', gap: 96, alignItems: 'start' }}>
         <div>
+          <FadeIn>
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 20 }}>06 · Contacto</div>
           <h2 className="headline" style={{ fontSize: 'clamp(28px, 3.5vw, 46px)', lineHeight: 1.06, margin: '0 0 28px' }}>
             ¿Empezamos por una <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300, color: 'var(--accent)' }}>conversación</span>?
@@ -67,8 +69,10 @@ export default function Contact() {
               </div>
             ))}
           </div>
+          </FadeIn>
         </div>
         <div style={{ background: 'var(--panel)', padding: 'clamp(32px, 4vw, 56px)' }}>
+          <FadeIn>
           {sent ? (
             <div style={{ textAlign: 'center', padding: '48px 0' }}>
               <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'var(--accent)', color: 'var(--bg)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
@@ -109,6 +113,7 @@ export default function Contact() {
               <p style={{ fontSize: 11, color: 'var(--muted)', lineHeight: 1.6, margin: 0 }}>Al enviar aceptas nuestra política de privacidad. Nunca compartiremos tus datos.</p>
             </form>
           )}
+          </FadeIn>
         </div>
       </div>
       <style>{`

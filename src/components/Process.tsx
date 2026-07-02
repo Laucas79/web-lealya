@@ -1,3 +1,5 @@
+import FadeIn from './FadeIn'
+
 const PROCESS = [
   ['Conversación', 'Nos conocemos, escucho tu situación y te explico cómo puedo ayudarte. Una primera conversación sin compromiso.'],
   ['Diagnóstico', 'Analizamos tu situación: patrimonio, timing, criterios objetivos vs. emocionales. Traducimos el caos en requisitos.'],
@@ -10,6 +12,7 @@ export default function Process() {
   return (
     <section id="proceso" className="section" style={{ background: 'var(--panel)', paddingTop: 80, paddingBottom: 16 }}>
       <div className="wrap">
+        <FadeIn>
         <div className="process-head" style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 64, marginBottom: 64 }}>
           <div><div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 12 }}>04 · Proceso</div></div>
           <h2 className="headline" style={{ fontSize: 'clamp(32px, 4.4vw, 60px)', lineHeight: 1.08, margin: 0, maxWidth: 900 }}>
@@ -31,6 +34,7 @@ export default function Process() {
             ))}
           </div>
         </div>
+        </FadeIn>
       </div>
       <style>{`
         @media (max-width: 900px) {

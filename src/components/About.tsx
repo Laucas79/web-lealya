@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import FadeIn from './FadeIn'
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
             Fundadora · +20 años en el sector
           </div>
         </div>
-        <div>
+        <FadeIn>
           <div className="eyebrow" style={{ color: 'var(--accent)', marginBottom: 20 }}>02 · Sobre mí</div>
           <h2 className="headline" style={{ fontSize: 'clamp(24px, 3vw, 40px)', lineHeight: 1.08, margin: '0 0 28px' }}>
             Hola, soy <span style={{ fontStyle: 'italic', fontFamily: "'Fraunces', serif", fontWeight: 300 }}>Laura</span>.
@@ -37,7 +38,7 @@ export default function About() {
             &ldquo;La mejor casa no siempre es la más bonita. Es la que sigue teniendo sentido cinco años después.&rdquo;
             <div style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: 'normal', fontSize: 11, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--muted)', marginTop: 16 }}>— Laura Castellano</div>
           </div>
-        </div>
+        </FadeIn>
       </div>
       <style>{`
         @media (max-width: 900px) {
