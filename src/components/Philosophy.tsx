@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Philosophy() {
   return (
-    <section id="filosofia" className="section" style={{ background: 'var(--panel)', minHeight: 'calc(100vh - 69px)', paddingTop: 48, paddingBottom: 72 }}>
+    <section id="filosofia" className="section" style={{ background: 'var(--panel)', minHeight: 'calc(100vh - 69px)', paddingTop: 48, paddingBottom: 72, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       <div className="wrap philosophy-wrap" style={{
         display: 'grid', gridTemplateColumns: '280px minmax(0, 1fr)', gap: 80, alignItems: 'start',
       }}>
